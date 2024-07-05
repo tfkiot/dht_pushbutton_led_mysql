@@ -1,0 +1,22 @@
+
+
+CREATE TABLE `led_status` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `led1` TINYINT NOT NULL DEFAULT 0,
+    `led2` TINYINT NOT NULL DEFAULT 0,
+    `led3` TINYINT NOT NULL DEFAULT 0,
+    `led4` TINYINT NOT NULL DEFAULT 0,
+    PRIMARY KEY (`id`)
+);
+
+
+
+INSERT INTO `led_status` (`led1`, `led2`, `led3`, `led4`) VALUES (0, 0, 0, 0);
+
+
+CREATE TABLE sensordata (
+    id INT(6) AUTO_INCREMENT PRIMARY KEY,
+    temperature FLOAT,
+    humidity FLOAT,
+    reg_date DATETIME
+);
